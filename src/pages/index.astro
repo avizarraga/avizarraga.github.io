@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import {Button} from '@nextui-org/react';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="dark text-foreground bg-background">
 		<svg
 			class="astro-a"
 			width="495"
@@ -59,8 +60,11 @@ import Card from '../components/Card.astro';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
+			<Button color="primary" client:visible>My button</Button>
 		</ul>
 	</main>
+
+	<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FMadrid&showNav=1&showPrint=0&showTabs=1&showCalendars=0&src=Y19lNjBkY2VhNDA1ZDg0NzVkM2I5NjM5ZTdhNjk2MDRlMWI4OGIyMzFhNjUyYTVhYWIzN2U4N2Q5OTRlM2Y3MzY5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZXMuc3BhaW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F4511E&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </Layout>
 
 <style>
